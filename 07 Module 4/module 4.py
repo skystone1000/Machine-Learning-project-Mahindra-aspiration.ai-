@@ -55,9 +55,7 @@ transfomed_label = le.fit_transform(tcs_dat[['Call']])
 train_Y = transfomed_label.reshape(-1,1)
 
 
-
-
-
+#--------------------------------------------------------------------
 import sklearn as sk  
 from sklearn.linear_model import LogisticRegression  
 import pandas as pd  
@@ -68,12 +66,7 @@ LR.predict(train_X)
 print("Logistic Regression")
 round(LR.score(train_X,train_Y), 4)
 
-
-
-
-
-
-
+#--------------------------------------------------------------------
 import sklearn as sk  
 from sklearn import svm  
 import pandas as pd  
@@ -85,10 +78,7 @@ SVM.predict(train_X)
 print("Support Vector Machines")
 round(SVM.score(train_X,train_Y), 4) 
 
-
-
-
-
+#--------------------------------------------------------------------
 import sklearn as sk  
 from sklearn.ensemble import RandomForestClassifier
 
@@ -98,10 +88,7 @@ RF.predict(train_X)
 print("Random Forests")
 round(RF.score(train_X,train_Y), 4)  
 
-
-
-
-
+#--------------------------------------------------------------------
 import sklearn as sk  
 from sklearn.neural_network import MLPClassifier
 
@@ -110,8 +97,6 @@ NN.fit(train_X, train_Y)
 NN.predict(train_X)
 print("Neural Networks")
 round(NN.score(train_X, train_Y), 4)  
-
-
 
 """
 Query 4.2
